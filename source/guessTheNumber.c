@@ -39,7 +39,6 @@ int main(){
             printf("Sorry, you not have more chances :/");
                 break;
         }
-
         userTries++;
     }
 
@@ -47,7 +46,8 @@ int main(){
     scanf("%s", &tryAgain);
     tryAgain = toupper(tryAgain);
     if(tryAgain == 'Y'){
-         goto startGame;
+        userTries = 1;
+        goto startGame;
     }
     
     return 0;
